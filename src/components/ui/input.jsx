@@ -21,7 +21,7 @@ export function CInput({
           defaultValue={value[name] ?? ""}
           placeholder={placeholder}
           className={`p-2 font-ubuntu-regular ${clsx({
-            "border-strawberry-red": errors !== undefined ?? true,
+            "border-strawberry-red": errors !== undefined,
           })} border-cool-gray border-2 border-solid rounded-md`}
           {...register}
         />
