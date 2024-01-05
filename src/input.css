@@ -17,6 +17,13 @@
   src: local("./assets/fonts/Ubuntu-Regular.ttf");
 }
 
-/* body {
-  background-color: hsl(206, 94%, 87%);
-} */
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+@media (375px <= width <= 1440px) {
+  .main {
+    background: url("./images/bg-sidebar-mobile.svg") no-repeat
+      hsl(217, 100%, 97%);
+    background-size: contain;
+  }
+}

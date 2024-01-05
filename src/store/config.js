@@ -34,5 +34,8 @@ export const useUserStore = create((set) => ({
   prevStep: () => set((store) => {
     return {...store, data: {...store.data, step: store.data.step - 1}} 
   }),
+  gotoStep: (value) => set((store) => {
+    return {...store, data: {...store.data, step:value}} 
+  }),
   reset: () => set({ user: INITIAL_STATE}),
 }))
