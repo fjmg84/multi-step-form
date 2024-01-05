@@ -1,6 +1,5 @@
 import { useUserStore } from "../store/config";
 import CButton from "./ui/button";
-import Title from "./ui/title";
 import { CCard } from "./ui/card";
 import planData from "../mock/data.json";
 import pickData from "../mock/pick.json";
