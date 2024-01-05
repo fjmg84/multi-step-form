@@ -13,8 +13,6 @@ function App() {
   const { data } = useUserStore();
   const { step } = data;
 
-  console.log(step);
-
   useEffect(() => {
     if (!btnDisables.includes(step)) setBtnDisables((prev) => [...prev, step]);
   }, [step]);

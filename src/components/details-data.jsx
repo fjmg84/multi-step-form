@@ -14,8 +14,8 @@ export function DetailsData() {
   return (
     <>
       <Title
-        title="Pick add-ons"
-        subtitle="Add-ons help enhance your gaming experience."
+        title="Finishing up"
+        subtitle="Thanks for confirming your subscription!"
       />
 
       <div className="flex flex-col gap-5">
