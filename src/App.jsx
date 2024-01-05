@@ -35,14 +35,14 @@ function App() {
   }, [step]);
 
   return (
-    <div className="mobile flex flex-col justify-center items-center lg:h-screen h-full w-screen bg-magnolia">
-      <div className="flex gap-5 lg:hidden">
+    <div className="mobile flex flex-col gap-10 lg:justify-center items-center h-screen w-screen bg-magnolia">
+      <div className="flex mt-20 w-full items-center justify-center gap-5 lg:hidden">
         {steps.map(({ id }) => {
           return <Steps key={id} step={step} item={id} status={btnDisables} />;
         })}
       </div>
 
-      <div className="p-5 flex lg:bg-white rounded-2xl lg:shadow-lg w-[1024px] h-[620px]">
+      <div className="p-5 flex rounded-2xl lg:bg-white lg:shadow-lg lg:w-[1024px] lg:h-[620px]">
         <div className="hidden lg:flex desktop w-2/5">
           <div className="p-6 flex flex-col gap-8">
             {steps.map(({ id, description }) => {
@@ -62,7 +62,7 @@ function App() {
             })}
           </div>
         </div>
-        <div className="bg-white w-3/5 rounded-lg lg:shadow-none shadow-lg flex flex-col p-10 gap-5">
+        <div className="bg-white lg:w-3/5 rounded-lg lg:shadow-none shadow-lg flex flex-col p-10 gap-5">
           {step === 1 && <PersonalInfoForm />}
           {step === 2 && <SelectPlanForm />}
           {step === 3 && <PickAddOnsForm />}
