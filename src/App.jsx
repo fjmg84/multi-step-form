@@ -1,12 +1,11 @@
 //import { Colors } from "./components/ui/colors";
+import { useState, useEffect } from "react";
 import { useUserStore } from "./store/config";
 import PersonalInfoForm from "./components/forms/personal-info";
 import SelectPlanForm from "./components/forms/select-plant";
 import { PickAddOnsForm } from "./components/forms/pick-add-ons";
 import { DetailsData } from "./components/details-data";
 import { Steps } from "./components/steps";
-import { useEffect } from "react";
-import { useState } from "react";
 
 function App() {
   const [btnDisables, setBtnDisables] = useState([1]);
