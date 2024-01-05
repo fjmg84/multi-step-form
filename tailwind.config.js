@@ -3,10 +3,6 @@ export default {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'mobile-bg': "url('/images/bg-sidebar-mobile.svg')",
-        'desktop-bg': "url('/images/bg-sidebar-desktop.svg')",
-      },
       colors: {
         'marine-blue': 'hsl(213, 96%, 18%)',
         'purplish-blue': 'hsl(243, 100%, 62%)',
@@ -19,11 +15,6 @@ export default {
         'alabaster': 'hsl(231, 100%, 99%)',
         'white': 'hsl(0, 0%, 100%)',
       },
-      fontFamily: {
-        'ubuntu-regular': ['Ubuntu-Regular', 'sans-serif'],
-        'ubuntu-bold': ['Ubuntu-Bold', 'sans-serif'],
-        'ubuntu-medium': ['Ubuntu-Medium', 'sans-serif'],
-      },
       fontWeight: {
         400:400, 
         500:500, 
@@ -31,12 +22,7 @@ export default {
       },
       fontSize: {
         'md': '16px',
-      },
-      screens: {
-      'mobile': '375px',
-      'desktop': '1440px',
-
-    }
+      }
     }
   },
   plugins: [],

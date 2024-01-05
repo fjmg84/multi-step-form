@@ -21,9 +21,16 @@
 - Desktop: 1440px */
 
 @media (375px <= width <= 1440px) {
-  .main {
+  .mobile {
     background: url("./images/bg-sidebar-mobile.svg") no-repeat
       hsl(217, 100%, 97%);
+    background-size: contain;
+  }
+}
+
+@media (width >= 1440px) {
+  .desktop {
+    background: url("./images/bg-sidebar-desktop.svg") no-repeat;
     background-size: contain;
   }
 }

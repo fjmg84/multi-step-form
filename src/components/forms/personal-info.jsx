@@ -26,7 +26,7 @@ export default function PersonalInfoForm() {
       />
 
       <form className="flex flex-col gap-5" onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-col gap-5 max-w-[500px]">
+        <div className="flex flex-col gap-5">
           <CInput
             value={user}
             name={"name"}
